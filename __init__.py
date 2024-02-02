@@ -17,8 +17,7 @@ def register():
     course = request.form['course']
 
     # Azure Storage Account Configuration
-    connection_string = "<YOUR_STORAGE_CONNECTION_STRING>"
-    container_name = "student-registration"
+    connection_string = "flPUZCqra3HwGV+2Cfg3+PrJ+oeumAiPdb5/FWSccrSVXzHEg9O/57czIX426E+HV8DPHjzoxwz8+ASt8GLP9w=="
 
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
     container_client = blob_service_client.get_container_client(container_name)
